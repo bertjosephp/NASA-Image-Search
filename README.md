@@ -1,3 +1,16 @@
+# NASA Image Search
+NASA Image Search is a web application that allows users to search for images from NASA's Image and Video Library using keywords. The app utilizes the NASA Image and Video Library API to fetch relevant images, which are then displayed in a grid format on the page.
+
+The app is built using the React framework and incorporates HTML, CSS, and JavaScript. It features a clean and intuitive user interface that allows users to easily search for and view images.
+
+Each image in the grid is accompanied by its title, description, and date created, providing users with additional information about the content they are viewing.
+
+Try out NASA Image Search today and discover the wonders of NASA's vast image library!
+
+[Live Demo](https://bertjosephp.github.io/NASA-Image-Search/)
+![Sample Page 1](./demo_images/demo1.jpg)  
+![Sample Page 2](./demo_images/demo2.jpg) 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
