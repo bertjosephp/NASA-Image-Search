@@ -11,7 +11,6 @@ const App = () => {
   const searchImages = async (title) => {
     const response = await fetch(`${API_URL}?q=${title}&media_type=image`);
     const data = await response.json();
-    console.log(data.collection.items);
     setImages(data.collection.items);
   }
 
