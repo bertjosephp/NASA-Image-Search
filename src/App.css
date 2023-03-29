@@ -1,38 +1,166 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+/* Define background color */
+body {
+  background: linear-gradient(to bottom, #0D1E31 0%, #060D18 100%);
+  font-family: "Courier New", Courier, monospace, sans-serif;
+}
+
+/* Style app container */
+.app {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #FFFFFF;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style headings */
+.title-container {
+  background: linear-gradient(to bottom, #0D1E31 0%, #060D18 100%);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #FFFFFF;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  margin: 1rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* Style search input */
+input {
+  background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+  width: 100%;
+  max-width: 500px;
+  height: 25px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 25px;
+}
+
+/* Style image container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+/* Style individual image cards */
+.imageCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 325px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  color: #000000;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+.imageCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageCard:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* Style empty state message */
+.empty {
+  margin-top: 2rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+/* Style modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: auto;
+  max-width: 50%;
+  background: linear-gradient(to bottom, #282c34, #1b1e24);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-content div {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  padding: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-content p {
+  max-width: 100%;
+  max-height: 250px;
+  overflow: auto;
+}
+
+.modal img {
+  width: auto;
+  max-width: 30%;
+  height: auto;
+  max-height: 30%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.modal button {
+  margin-top: 1rem;
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: #0d1e31;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px #282c34;
+}
+
+.modal button:hover {
+  background-color: #060D18;
+}
+
+.modal button:focus {
+  transform: translateY(2px);
+  box-shadow: 0 3px #282c34;
 }
